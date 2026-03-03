@@ -9,4 +9,5 @@
 /ndlocr-lite-gui/4ab7ecc3-53fb-b3e7-64e8-a809b5a483d2/
 /4ab7ecc3-53fb-b3e7-64e8-a809b5a483d2/
 node_modules/
-dist/.DS_Store
+dist/
+.DS_Store
