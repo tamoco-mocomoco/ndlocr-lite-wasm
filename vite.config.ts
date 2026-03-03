@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/ndlocr-lite-wasm/",
   server: {
     port: 6174,
     headers: {
