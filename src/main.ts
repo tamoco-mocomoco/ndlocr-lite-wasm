@@ -499,7 +499,7 @@ function runOcr(imageBlob: Blob, img: HTMLImageElement, imgUrl: string): void {
     const msg = e.data;
     switch (msg.type) {
       case "init-progress": {
-        const pct = msg.total > 0 ? msg.loaded / msg.total : 0;
+        const pct = msg.total > 0 ? Math.min(msg.loaded / msg.total, 1) : 0;
         showProgress(`${msg.model} ダウンロード中... ${Math.round(pct * 100)}%`, pct);
         break;
       }
